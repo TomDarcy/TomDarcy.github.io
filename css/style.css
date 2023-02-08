@@ -40,8 +40,6 @@ nav {
   position: relative;
 }
 
-
-
 nav ul {
   list-style: none;
   margin: 0;
@@ -317,7 +315,7 @@ i {
 
 /* The actual timeline (the vertical ruler) */
 .timeline::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 6px;
   background-color: #10069f;
@@ -326,31 +324,32 @@ i {
   left: 50%;
   margin-left: -3px;
 }
+
 /* Container around content */
 .containert {
   padding: 10px 40px;
   position: relative;
-  background-color: inherit;
+  background-color: ;
   width: 50%;
 }
 
 /* The circles on the timeline */
 .containert::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 25px;
   height: 25px;
-  right: -17px;
-  background-color: #00bfbd;
-  border: 4px solid #8be8df;
-  top: 15px;
+  right: -12px;
+  background-color: rgb(0, 0, 0);
+  border: 4px solid #ff9f55;
+  top: 1px;
   border-radius: 50%;
   z-index: 1;
 }
 
 /* Place the container to the left */
 .left {
-  left:0%;
+  left: 0;
 }
 
 /* Place the container to the right */
@@ -363,7 +362,7 @@ i {
   content: " ";
   height: 0;
   position: absolute;
-  top: 22px;
+  top: 5px;
   width: 0;
   z-index: 1;
   right: 30px;
@@ -377,7 +376,7 @@ i {
   content: " ";
   height: 0;
   position: absolute;
-  top: 22px;
+  top: 5px;
   width: 0;
   z-index: 1;
   left: 30px;
@@ -388,7 +387,7 @@ i {
 
 /* Fix the circle for containers on the right side */
 .right::after {
-  left: -16px;
+  left: -12px;
 }
 
 /* The actual content */
@@ -401,70 +400,44 @@ i {
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
 @media screen and (max-width: 600px) {
-/* Place the timelime to the left */
+  /* Place the timelime to the left */
   .timeline::after {
     left: 31px;
   }
 
-/* Full-width containers */
+  /* Full-width containers */
   .containert {
     width: 100%;
     padding-left: 70px;
     padding-right: 25px;
   }
 
-/* Make sure that all arrows are pointing leftwards */
-  .containert::before {
+  /* Make sure that all arrows are pointing leftwards */
+  .containerT::before {
     left: 60px;
     border: medium solid white;
     border-width: 10px 10px 10px 0;
     border-color: transparent white transparent transparent;
   }
 
-/* Make sure all circles are at the same spot */
-  .left::after, .right::after {
+  /* Make sure all circles are at the same spot */
+  .left::after,
+  .right::after {
     left: 15px;
   }
 
-/* Make all right containers behave like the left ones */
+  /* Make all right containers behave like the left ones */
   .right {
     left: 0%;
   }
 }
 
-.center_button {
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-
-@media (max-width: 960px) {
-  /* For a screen < 960px, this CSS will be read */
-  .container {
-    width: 700px;
-  }
-}
-
-@media (max-width: 720px) {
-  /* For a screen < 720px, this CSS will be read */
-  .container {
-    width: 500px;
-  }
-}
-
-@media (max-width: 540px) {
-  /* For a screen < 540px, this CSS will be read */
-  .container {
-    width: 300px;
-  }
-}
 .bgimg {
   /* Background image */
-  background-image: url('../images/pexels-cottonbro-studio-3843282.jpg');
+  background-image: url("https://www.w3schools.com/w3images/forestbridge.jpg");
   /* Full-screen */
-  height: 100%;
+  height: 500px;
+
   /* Center the background image */
   background-position: center;
   /* Scale and zoom in the image */
@@ -507,3 +480,4 @@ hr {
   margin: auto;
   width: 40%;
 }
+/* Style all font awesome icons */
