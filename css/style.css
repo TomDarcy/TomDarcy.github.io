@@ -257,6 +257,7 @@ a {
 
 .card-text {
   padding: 10px;
+  font-weight: lighter;
 }
 
 #header-card {
