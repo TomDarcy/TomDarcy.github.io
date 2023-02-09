@@ -107,3 +107,9 @@ a {
   @media (max-width: 768px) {
     font-size: 24px;
   }
+}
+
+button:hover,
+a:hover {
+  opacity: 0.7;
+}
