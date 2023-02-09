@@ -1,306 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tom Darcy - Portfolio</title>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900"
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
-      crossorigin="anonymous"
-    />
-
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <!--navigation bar-->
-    <nav>
-      <div class="nav-toggle"></div>
-      <ul>
-        <li><a href="#home-section">Home</a></li>
-        <li><a href="#skills-section">Skills</a></li>
-        <li><a href="#projects-section">Projects</a></li>
-
-        <li><a href="#timeline-section">Timeline</a></li>
-        <li><a href="#contact-section">Contact Me</a></li>
-      </ul>
-    </nav>
-    <br />
-    <!-- Page Heading -->
-    <section id="home-section" class="hero">
-      <div
-        id="carouselExampleCaptions"
-        class="carousel slide carousel-fade"
-        data-bs-ride="false"
-      >
-        <div class="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="0"
-            class="active"
-            aria-current="true"
-            aria-label="Slide 1"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="1"
-            aria-label="Slide 2"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="2"
-            aria-label="Slide 3"
-          ></button>
+    <div class="container">
+      <div class="card-container">
+        <div class="avatar">
+          <img class="avatar" src="images/headshot.jpeg" alt="" />
         </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img
-              src="images/bg_1.png"
-              class="d-block w-50 c_height"
-              alt="..."
-            />
-            <div class="carousel-caption d-none d-md-block justify-right">
-              <h5>Tom d'Arcy</h5>
-              <p>Web Developer</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img
-              src="images/bg_2.png"
-              class="d-block w-50 c_height"
-              alt="..."
-            />
-            <div class="carousel-caption d-none d-md-block justify-right">
-              <h5>Welcome to my portfolio</h5>
-              <p>Here you can find out more about me</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img
-              src="images/bg_grad.png"
-              class="d-block w-50 c_height"
-              alt="..."
-            />
-            <div class="carousel-caption d-none d-md-block justify-right">
-              <h5>Get in touch</h5>
-              <p>If you want to get in touch go to the bottom of the page</p>
-            </div>
-          </div>
+        <div class="top-card">Tom d'Arcy</div>
+        <div class="middle-card">
+          Senior Engineering Manager<br />Digital Manufacturing / Industry 4.0 /
+          Innovation
         </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExampleCaptions"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExampleCaptions"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-    </section>
-    <br />
-    <!--Skills-->
-    <section id="skills-section">
-      <h1>Skills</h1>
-      <div class="container text-center">
-        <div class="row">
-          <div class="col">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">HTML</h5>
-                <img
-                  src="images/html.png"
-                  class="card-img-top skill-img"
-                  alt="..."
-                />
-                <p class="card-text">I know how to do some HTML</p>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">Ruby</h5>
-                <img
-                  src="images/ruby.png"
-                  class="card-img-top skill-img"
-                  alt="..."
-                />
-                <br />
-                <p class="card-text">I know how to do some Ruby</p>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">SQL</h5>
-                <img
-                  src="images/sql.png"
-                  class="card-img-top skill-img"
-                  alt="..."
-                />
-                <p class="card-text">I know how to do some SQL</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row"></div>
-      </div>
-    </section>
-    <!--projects-->
-    <section id="projects-section" class="hero">
-      <div class="bgimg">
-        <div class="topleft">
-          <h1>Projects</h1>
-        </div>
-        <div class="middle">
-          <h1>Arriving in</h1>
-          <hr />
-          <p id="demo"></p>
-        </div>
-        <div class="bottomleft">
-          <p></p>
+        <div class="bottom-card">
+          <a href="https://www.linkedin.com/in/thomasdarcyuk/"
+            ><i class="fa fa-linkedin"></i
+          ></a>
+          <a href="https://github.com/TomDarcy"><i class="fa fa-github"></i></a>
+          <a href="mailto:thomasdarcy@outlook.com"
+            ><i class="fa fa-envelope"></i
+          ></a>
+          <p><button>Contact</button></p>
         </div>
       </div>
-    </section>
-    <!--timeline-->
-    <section id="timeline-section" class="hero">
-      <h1>Timeline</h1>
-
-      <div class="timeline">
-        <div class="containert left">
-          <div class="content">
-            <h2>1996</h2>
-            <p>I was born</p>
-          </div>
-        </div>
-        <div class="containert right">
-          <div class="content">
-            <h2>2014</h2>
-            <p>I left school and started work</p>
-          </div>
-        </div>
-        <div class="containert left">
-          <div class="content">
-            <h2>2022</h2>
-            <p>I quit my job</p>
-          </div>
-        </div>
-        <div class="containert right">
-          <div class="content">
-            <h2>2023</h2>
-            <p>Arrived in Bali</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!--Contact-->
-    <section id="contact-section">
-      <h1>Contact me</h1>
-
-      <br />
-      <div class="card" id="contact-card">
-        <img
-          id="contact-photo"
-          src="/images/card pic.jpg"
-          alt="John"
-          style="width: 100%"
-        />
-        <br />
-        <h1>Tom d'Arcy</h1>
-        <p class="title">Trainee Web Developer</p>
-        <p>Le Wagon</p>
-        <a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
-        <a href="https://www.twitter.com/"><i class="fa fa-twitter"></i></a>
-        <a href="https://www.linkedin.com/in/thomasdarcyuk/"
-          ><i class="fa fa-linkedin"></i
-        ></a>
-        <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
-        <button
-          class="contact-button center-button"
-          data-tf-popup="sJ1pBFrM"
-          data-tf-opacity="100"
-          data-tf-size="100"
-          data-tf-iframe-props="title=ContactMe"
-          data-tf-transitive-search-params
-          data-tf-medium="snippet"
-        >
-          Contact me
-        </button>
-      </div>
-      <!-- end of page content-->
-
-      <script src="//embed.typeform.com/next/embed.js"></script>
-    </section>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-      crossorigin="anonymous"
-    ></script>
-
-    <script src="//embed.typeform.com/next/embed.js"></script>
-
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>
-      // Set the date we're counting down to
-      var countDownDate = new Date("Mar 17, 2023 17:00:00").getTime();
-
-      // Update the count down every 1 second
-      var x = setInterval(function () {
-        // Get todays date and time
-        var now = new Date().getTime();
-
-        // Find the distance between now an the count down date
-        var distance = countDownDate - now;
-
-        // Time calculations for days, hours, minutes and seconds
-        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-        var hours = Math.floor(
-          (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-        );
-        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-        // Display the result in an element with id="demo"
-        document.getElementById("demo").innerHTML =
-          days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
-
-        // If the count down is finished, write some text
-        if (distance < 0) {
-          clearInterval(x);
-          document.getElementById("demo").innerHTML = "EXPIRED";
-        }
-      }, 1000);
-    </script>
+    </div>
   </body>
 </html>
